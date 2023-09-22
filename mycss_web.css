@@ -52,6 +52,16 @@ h2 {
   color: #bdc3c7;
 }
 
+.list-group .list-group-item {
+  color: black;
+  text-align: center;
+  background-color: #e5e4e2;
+}
+
+.table {
+  background-color: #e5e4e2;
+}
+
 video {
   display: block;
   margin-left: auto;

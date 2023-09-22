@@ -1,144 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
     <title>Your Profile</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./mycss_web.css"
-      media="screen and (min-width: 769px)"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./mycss_tablet.css"
-      media="screen and (max-width: 768px)"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./mycss_web.css">
+    <link rel="stylesheet" type="text/css" href="./mycss_tablet.css">
+</head>
+<body>
+<div class="container">
 
-    <style>
-      #work-experience h2 {
-        color: darkgreen;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Menu Section -->
-    <div id="menu">
-      <h1>Menu</h1>
-      <ul>
-        <li><a href="#basic-profile">Basic Profile</a></li>
-        <li><a href="#education-summary">Education Summary</a></li>
-        <li><a href="#work-experience">Work Experience</a></li>
-      </ul>
-    </div>
+    <!-- Menu Section with Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#basic-profile">Basic Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education-summary">Education Summary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work-experience">Work Experience</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Basic Profile Information -->
-    <div id="basic-profile">
-      <h1><span>Kevin Boukpessi</span></h1>
-      <img
-        src="https://www.stjohns.edu/themes/sju_theme/assets/logos/logo-footer.svg"
-      />
-      <h2><span>Major:</span> Computer Science</h2>
-      <img src="DSCF9141.jpg" width="450" height="675" />
+    <div id="basic-profile" class="row mt-4">
+        <div class="col-12 col-md-6 text-center">
+            <h1>Kevin Boukpessi</h1>
+            <img src="https://www.stjohns.edu/themes/sju_theme/assets/logos/logo-footer.svg"
+                 class="rounded-circle my-4" alt="Profile Image">
+            <h2>Major: Computer Science</h2>
+        </div>
+        <div class="col-12 col-md-6 text-center">
+            <img src="DSCF9141.jpg" class="img-fluid" alt="Another Image">
+        </div>
     </div>
 
-    <!-- Education Summary -->
-    <div id="education-summary">
-      <h2 style="text-align: center">Education Summary</h2>
-      <p>
-        <span
-          >Current Computer Science major student with a concentartion in
-          Business at St John University</span
-        >
-      </p>
-      <ul>
-        <li>Bachelor's in Computer Science, St John University</li>
-      </ul>
+    <!-- Education Summary with Card -->
+    <div id="education-summary" class="card mt-4">
+        <div class="card-header">
+            Education Summary
+        </div>
+        <div class="card-body">
+            <p class="card-text">Current Computer Science major student with a concentration in Business at St John University</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Bachelor's in Computer Science, St John University</li>
+            </ul>
+        </div>
     </div>
 
-    <!-- Work Experience/Internships -->
-    <div id="work-experience">
-      <h2>Work Experience/Internships</h2>
-      <ul>
-        <li>Tech Consulting Intern, Protiviti</li>
-        <li>Retail Customer Service and Sales Associate</li>
-        <li>Inventory Management and Graphic Brand Design Associate</li>
-        <li>IT assistant</li>
-      </ul>
+    <!-- Work Experience/Internships with List group -->
+    <div id="work-experience" class="mt-4">
+        <h2>Work Experience/Internships</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Tech Consulting Intern, Protiviti</li>
+            <li class="list-group-item">Retail Customer Service and Sales Associate</li>
+            <li class="list-group-item">Inventory Management and Graphic Brand Design Associate</li>
+            <li class="list-group-item">IT assistant</li>
+            <!-- Add other items similarly -->
+        </ul>
     </div>
 
-    <!-- Programming Skills -->
-    <div id="programming-skills">
-      <h2>Programming Skills</h2>
-      <ul>
-        <li>Javascritp</li>
-        <li>Html</li>
-        <li>CSS</li>
-        <li>Java</li>
-      </ul>
-    </div>
+<!-- Programming Skills with List Group -->
+<div id="programming-skills" class="mt-4">
+  <h2>Programming Skills</h2>
+  <ul class="list-group">
+      <li class="list-group-item">Javascript</li>
+      <li class="list-group-item">HTML</li>
+      <li class="list-group-item">CSS</li>
+      <li class="list-group-item">Java</li>
+  </ul>
+</div>
 
-    <!-- General Interests -->
-    <div id="general-interests">
-      <h2>General Interests</h2>
-      <p>
-        I enjoy fashion, strength Training, calistenics, anime, video game,
-        sports, technology
-      </p>
-    </div>
+<!-- General Interests -->
+<div id="general-interests" class="mt-4">
+  <h2>General Interests</h2>
+  <p>
+      I enjoy fashion, strength Training, calisthenics, anime, video game, sports, technology.
+  </p>
+</div>
 
-    <!-- Favorite Media -->
-    <div id="favorite-media">
-      <h2>Favorite Song, Film, and TV Show</h2>
+<!-- Favorite Media with Embedded Video -->
+<div id="favorite-media" class="mt-4">
+  <h2>Favorite Song, Film, and TV Show</h2>
+  <video class="img-fluid" controls>
+      <source src="Corinne Bailey Rae - Put Your Records On.mp4" type="video/mp4">
+  </video>
+</div>
 
-      <video controls>
-        <source
-          src="Corinne Bailey Rae - Put Your Records On.mp4"
-          type="video/mp4"
-        />
-      </video>
-    </div>
-
-    <!-- Favorite Websites -->
-    <div id="favorite-websites">
-      <h2>Favorite Websites</h2>
-      <ul>
-        <li>
+<!-- Favorite Websites -->
+<div id="favorite-websites" class="mt-4">
+  <h2>Favorite Websites</h2>
+  <ul class="list-group">
+      <li class="list-group-item">
           <a href="https://www.youtube.com/" target="_blank">Youtube</a>
-        </li>
-      </ul>
-      <p>
-        Youtube is my favorite website because i grew up on this website.
-        Learned so much and had so many laughs by watching videos
-      </p>
-    </div>
+          - Youtube is my favorite website because I grew up on this website. Learned so much and had so many laughs by watching videos.
+      </li>
+  </ul>
+</div>
 
-    <!-- My Projects in This Course -->
-    <div id="course-projects">
-      <h2>My Projects in This Course</h2>
-      <table>
-        <tr>
+<!-- My Projects in This Course with Table -->
+<div id="course-projects" class="mt-4">
+  <h2>My Projects in This Course</h2>
+  <table class="table table-striped">
+      <thead>
+      <tr>
           <th>Project</th>
           <th>Description</th>
-        </tr>
-        <tr>
-          <td><a href="#this-page"></a></td>
-          <td><p>Web page about me!</p></td>
-        </tr>
-      </table>
-    </div>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+          <td><a href="#this-page">This Page</a></td>
+          <td>Web page about me!</td>
+      </tr>
+      </tbody>
+  </table>
+</div>
 
-    <!--Form-->
-    <div id="contact-form">
-      <h2>Contact Me</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" />
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
-  </body>
+<!-- Contact Form with Bootstrap's Form Classes -->
+<div id="contact-form" class="mt-4">
+  <h2>Contact Me</h2>
+  <form class="text-center">
+      <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" class="form-control">
+      </div>
+      <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" class="form-control">
+      </div>
+      <input type="submit" value="Submit" class="btn btn-primary">
+  </form>
+</div>
+
+</body>
+</html>
+
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
