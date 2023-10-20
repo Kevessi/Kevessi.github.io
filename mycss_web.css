@@ -94,3 +94,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #c0392b;
 }
+
+.completed-task {
+  text-decoration: line-through;
+}
